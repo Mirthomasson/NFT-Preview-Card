@@ -11,6 +11,8 @@ body {
     background-color: hsl(216, 50%, 16%);
     border-radius: 10px;
     padding: 1.5em;
+    position: relative;
+    top: 5em;
 }
 
 img {
@@ -39,7 +41,7 @@ p {
 .cyan-time {
     display: flex;
     justify-content: space-between;
-    gap: 8em;
+    gap: 7em;
     padding-bottom: 20px;
     border-bottom: 1px solid hsl(215, 32%, 27%);
 }
@@ -102,10 +104,31 @@ p {
 .attribution { 
     font-size: 11px; 
     color: hsl(0, 0%, 100%);
+    text-align: center;
     position: fixed;
     bottom: 0;
+    margin: 2em;
 }
+
 .attribution a {
     color: hsl(178, 100%, 50%);
     text-decoration: none; 
+}
+
+@media screen and (min-width: 375px) {
+    .component {
+        max-height: 595.25px;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    img {
+        max-height: 304px;
+        max-width: 304px;
+    }
+
+    .attribution {
+        position: relative;
+        bottom: -25em;
+    }
 }
